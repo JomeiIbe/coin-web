@@ -1,0 +1,484 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
+
+
+/* main font link */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Lobster&family=Qwitcher+Grypen:wght@700&family=Raleway&family=Roboto&dispaly=swap');
+/* main font link */
+
+/* barlow is not added in the import statement of the above */
+
+* {
+  font-family: 'barlow', sans-serif;
+  line-height: 1.7;
+  outline: none;
+  text-transform: capitalize;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+  color: #516171;
+}
+
+:root{
+  --main-color:#e71903;
+  --box-shadow: 0 6px 30px rgba(0,0,0,0.08);
+  --darkClr: #092032;
+}
+
+/* .app-store-img{
+  max-height: 2rem !important;
+ 
+} */
+
+h1,h2,h3,h4,h5,h6 { font-weight: 700!important;
+  color: #092032; }
+
+a { color: #092032; font-weight: 500; 
+  text-decoration: none;}
+
+img{ width: 100%;}
+
+section{
+  padding: 120px 0 !important;
+}
+
+.j-bg-cover{
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+
+}
+
+.intro {
+  margin-bottom: 40px;
+}
+
+.intro h6{
+ font-weight: 400 !important;
+ color: var(--main-color);
+}
+
+.intro p {
+  max-width: 500px;
+  margin: auto;
+}
+
+
+.btn-brand {
+  background-color: var(--main-color) !important;
+  color:#fff !important;
+  border: 1px solid var(--main-color) !important;
+}
+
+.btn-login {
+  /* background: rgb(7, 102, 146); */
+  background: linear-gradient(to left,rgb(6, 147, 212), rgb(7, 113, 161));
+  color: #fff !important;
+  border: 1px solid rgb(7, 102, 146);
+  padding: 9px 24px;
+}
+.btn-login:hover {
+  background: none;
+  color: rgb(7, 102, 146);
+  border: 1px solid rgb(7, 102, 146);
+}
+
+.btn-brand:hover {
+  color: var(--main-color) !important;
+  border: 1px solid var(--main-color) !important;
+  background: none !important;
+}
+
+
+
+
+
+
+/* TOp Navabr */
+
+.top-nav{
+  background-color: var(--main-color);
+  padding: 5px 0;
+}
+.top-nav > p{
+  color: white !important;
+  margin-bottom: 0;
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.social-links a{
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.408);
+  padding: 5px 9px;
+  align-items: center;
+  justify-items: center;
+  color:#fff !important;
+  font-size: 1.3rem;
+  border-radius: 50%;
+}
+.social-links a i{
+  color:#fff !important;
+  font-size: 1.3rem;
+  
+}
+.social-links a:hover {
+  background: var(--main-color) !important;
+}
+
+.social-links a i:hover{
+  color: #fff;
+}
+
+.navbar{
+  box-shadow: var(--box-shadow);
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+  color: var(--main-color);
+}
+
+.navbar-brand {  font-size: 20px; font-weight: 700;
+  color:var(--darkClr);}
+
+  
+.navbar-brand span {  
+  color:var(--main-color);}
+
+.nav-item > a {
+  color: #fff;
+}  
+
+.navbar-toggler:focus {
+  outline: none !important;
+}
+
+.navbar-toggler:is(:hover, :focus) {
+    outline: none!important; 
+    border: none;
+  }
+  
+
+/* Slider Section */
+
+.slide1 {
+  background-image: linear-gradient(rgba(9, 32, 50, 0.4),rgba(9, 32, 50, 0.4)), url("../images/heroboss.jpg");
+}
+
+.slide2 {
+  background-image: linear-gradient(rgba(9, 32, 50, 0.4),rgba(9, 32, 50, 0.4)), url("../images/herohands.jpg");
+}
+
+.slide3 {
+  background-image: linear-gradient(rgba(9, 32, 50, 0.4),rgba(9, 32, 50, 0.4)), url("../images/herostand.jpg");
+}
+
+
+/* Owl Carousel */
+.owl-next, .owl-prev {
+ position: absolute;
+ top: 50%;
+ width: 60px !important;
+ height: 60px !important;
+ display: grid;
+ place-items: center;
+ background-color: rgba(255, 255, 255, 0.306) !important;
+ font-size: 1.1rem !important;
+ font-weight: 700!important;
+ margin-top: -30px !important;
+ border-radius: 100% !important;
+
+}
+.owl-next:hover, .owl-prev:hover {
+background-color: var(--main-color);
+ 
+ }
+
+.owl-prev{
+ left: 0;
+}
+.owl-next {
+ right: 0;
+}
+
+/* info box of the about section */
+
+
+.info-box img {
+  width: 90px;
+  margin-right: 18px;
+}
+
+
+/* CountDown section */
+#countDown {
+  background-image: linear-gradient(#0e2c44ea,#0e2c44af), url("../images/heroboss.jpg");
+}
+
+#countDown .display-4 {
+  font-weight: 700 !important;
+}
+
+#countDown .display-4, #milestone p{
+  color:#fff;
+}
+
+/* Services Section*/
+
+.service-box{
+  padding: 32px;
+  box-shadow: 8px 6px 30px rgba(0,0,0,0.08);
+  text-align: center;
+  color: #fff;
+  background: #15181b;
+}
+.service-box img{
+ width: unset;
+}
+.service-box h5{
+  margin-top: 24px;
+  margin-bottom: 12px;
+  color: #fff;
+ }
+
+.service-box-h5{
+  margin-top: 25px;
+  margin-bottom: 12px;
+}
+
+.provide-icon {
+  border-radius: 50%;
+  background-color: var(--main-color);
+  color: white;
+  border: 2px solid var(--main-color);
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+
+
+/* Project Section*/
+.project .owl-next, .project .owl-next{
+  background: rgba(255, 255, 255, 0.486) !important;
+}
+.project .owl-next:hover, .project .owl-next:hover{
+  background: var(main-color);
+}
+
+.project{
+  position: relative;
+
+}
+
+.project.overlay{
+  border: 3px solid red;
+  background: linear-gradient(to bottom, rgba(0, 32 ,50, 0.1),rgba(9,32 ,56, 0.8));
+  position: absolute;
+  width: 100%;
+  height: 240px;
+  /* height: 100%; will be sued later*/
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+.project .content {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding:32px;
+}
+
+.project h1, .project h6{
+  color: #fff;
+}
+.project h6 {
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+.project h6:before{
+  content: "";
+  height: 9px !important;
+  width: 20px !important;
+  background-color: var(--main-color);
+  display: inline-block;
+  margin-right: 12px; 
+  vertical-align: middle;
+
+}
+
+
+/*  info section */
+
+.info-card{
+  background: #15181b;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.062);
+}
+/* always check me */
+.bg-brand-dark {
+  background: #15181b;
+}
+
+
+
+
+
+/* investmenthero section */
+.i-hero-banner {
+  min-height: 474px !important;
+  position: relative;
+  background-image: linear-gradient(rgba(9, 32, 50, 0.616), rgba(9, 32, 50, 0.575)), url("../images/i-h-2.jpeg");
+  /* background-position: center; */
+  background-position-y: 1rem !important;
+}
+
+.i-hero-image{
+  position: absolute;
+  z-index: 9;
+ bottom: -3.8rem;
+  display: grid;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center !important;
+}
+
+.i-h-image {
+  max-height: 56vh !important;
+  
+}
+
+
+/* Reviews */
+#reviews{
+
+  background-image: linear-gradient(rgba(9, 32, 50, 0.616), rgba(9, 32, 50, 0.575)),  url("../images/investH.jpg");
+
+}
+
+.review{
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  /* border:  2px solid ; */
+}
+
+.review img{
+  width: 85px !important;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.review h4 {
+  margin-top: 16px;
+}
+.review h4, .review p{
+  color: #fff;
+}
+
+.review small {
+  color: var(--main-color);
+}
+
+.review p {
+  margin-top: 28px;
+}
+
+.owl-dot.active span{
+  background-color: var(--main-color);
+}
+
+/* .$this->above was found in the web console and styled accordingly*/
+
+/* Blog Post */
+
+.blog-post .tag{
+  position: absolute;
+  padding: 4px 12px;
+  background-color: var(--main-color);
+  color:#fff;
+  border-radius: 100px;
+  top: 20px;
+  left: 20px;
+}
+
+.blog-post img {
+  margin-bottom: 12px;
+}
+
+.blog-post h4{
+  margin: 12px 0 !important;
+}
+.blog-post a{
+  font-weight: 500 !important;
+}
+.blog-post a:hover{
+ color: var(--main-color);
+}
+
+.blog-post small{
+  color: var(--main-color);
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+
+
+/* footer section */
+.footer{
+  padding-top: 80px;
+  padding-bottom: 20px;
+  color: #fff;
+  background: linear-gradient(rgba(9, 32, 50, 0.8), rgba(9, 32, 50, 0.8)), url(..//.jpg  );
+}
+
+.footer .navbar-brand{
+  color:#fff;
+  margin-bottom: 20px;
+  display: inline-block;
+
+}
+
+.footer-top{
+  margin-bottom: 40px;
+}
+
+.footer-bottom{
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin-top: 40px;
+}
+
+.footer .social-links a{
+  margin-left: 5px;
+  margin: 5px;
+}
+
+
+
+.app-store {
+  display: flex;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+  padding-left: 0 !important;
+  margin: 0 !important;
+}
+.app-store-img {
+  height:  45px;
+  width:  auto !important;
+  margin: 0 !important;
+  margin-left: 3px;
+  object-fit: fill;
+}
+#a-store-2 {
+  margin-left: 12px !important;
+}
+
+/* modal styleing staerts here because it was all implemented at the end of the code */
+.form-control:focus{
+  box-shadow: none;
+  border-color: var(--main-color);
+}
+
+
